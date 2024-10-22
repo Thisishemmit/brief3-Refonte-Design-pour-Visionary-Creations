@@ -22,3 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const v1 = document.getElementById("v1").childNodes;
+for(node in v1){
+    node.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+}
