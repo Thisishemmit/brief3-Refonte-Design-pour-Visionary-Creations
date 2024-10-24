@@ -1,30 +1,18 @@
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
-const currentPath = window.location.pathname;
 
 // Gestion de l'affichage du menu mobile
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
 });
 
-// Vérification des liens actifs
-document.addEventListener('DOMContentLoaded', function() {
-    const currentLocation = window.location.pathname;
-    const menuItems = document.querySelectorAll('.menu-item');
+const v1 = document.getElementById("v1").children;
+console.log(v1);
 
-    menuItems.forEach(item => {
-        const link = item.querySelector('a');
-        if (link.href.includes(window.location.origin + currentLocation)) {
-            link.classList.add('text-red-500', 'font-bold'); // Classes Tailwind pour l'élément actif
-        } else {
-            link.classList.add('text-gray-600'); // Classe pour les éléments inactifs
-        }
+for (let i = 0; i < v1.length; i++) {
+    v1[i].addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
     });
-});
-
-const v1 = document.getElementById("v1").childNodes;
-for(node in v1){
-    node.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
 }
