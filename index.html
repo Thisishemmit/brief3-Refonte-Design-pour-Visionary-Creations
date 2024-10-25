@@ -691,41 +691,41 @@
 
 
     <!-- TESTIMONIAL SECTION -->
-    <section id="testimonial" class="testimonial w-full flex flex-col justify-center gap-y-8">
+    <section class="testimonial w-screen flex flex-col justify-center gap-y-8">
         <div class="title">
             <p class="text-center text-[#49505788] mt-5 ">Testimonial</p>
             <h1 class="text-center text-2xl md:text-3xl">What Our Clients Say</h1>
         </div>
         <div class="card flex flex-col md:flex-row justify-center mt-10 mb-10 md:gap-4 px-8 items-center gap-6 ">
             <div class="card1 flex items-center ">
-                <img src="imgs/avatar-5.jpg" alt="" class="w-14 h-14 rounded-2xl relative translate-x-1/2">
+                <img src="imgs/avatar-5.jpg" alt=""
+                    class="w-14 h-14 rounded-2xl relative translate-x-1/2">
                 <div class="border-2 p-3">
-                    <p class="ml-10 mb-4 text-[#49505788]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        <br> Culpa consequuntur
+                    <p class="ml-10 mb-4 text-[#49505788]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Culpa consequuntur
                         pariatur
                         doloribus sit
-                        reiciendis <br> provident alias harum itaque dicta dolorum.
-                    </p>
+                        reiciendis <br> provident alias harum itaque dicta dolorum.</p>
                     <h2 class="ml-10 ">Richard Reb</h2>
                 </div>
             </div>
             <div class="card2 flex items-center ">
-                <img src="imgs/avatar-6.jpg" alt="" " class=" w-14 h-14 rounded-2xl relative translate-x-1/2">
+                <img src="imgs/avatar-6.jpg" alt="" " class=" w-14 h-14 rounded-2xl
+                    relative translate-x-1/2">
                 <div class="border-2 p-3">
-                    <p class="ml-10 mb-4 text-[#49505788]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        <br> Aperiam nostrum sunt
+                    <p class="ml-10 mb-4 text-[#49505788]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Aperiam nostrum sunt
                         distinctio,
                         nemo
                         ut
-                        suscipit <br> earum maiores veniam cum totam.
-                    </p>
+                        suscipit <br> earum maiores veniam cum totam.</p>
                     <h2 class="ml-10 ">John Doe</h2>
                 </div>
             </div>
         </div>
         <div class="w-scree  bg-[url('../imgs/about.jpg')] bg-center mt-5">
             <div class="w-full h-full bg-[#212529F0] py-16 flex flex-col items-center justify-center gap-8">
-                <div class="md:size-40 size-28 rounded-full border-[#FF214F] border-2 flex items-center justify-center">
+
+
+                <div id="show_button" class="md:size-40 size-28 cursor-pointer rounded-full border-[#FF214F] border-2 flex items-center justify-center">
                     <i class="bi bi-play text-6xl text-[#FF214F]"></i>
                 </div>
                 <h1 class="text-center text-white text-2xl">See Our Intro Video</h1>
@@ -733,6 +733,13 @@
             </div>
         </div>
     </section>
+    <div id="video" class="w-screen h-screen bg-[#21252955] top-0 left-0  fixed hidden justify-center items-center">
+        <div id="myElement" class="absolute top-10 right-10">
+            <button id="hide_button" class="text-red-500 text-3xl w-10 h-10 bg-white rounded ">X</button>
+
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/na80LQCX1KU?si=fJArw5gSP58MCCE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
 
     <!-- BLOG SECTION -->
     <div class="title pt-5">
@@ -967,6 +974,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/intro.js"></script>
     <script src="libs/menu.js"></script>
 </body>
 
