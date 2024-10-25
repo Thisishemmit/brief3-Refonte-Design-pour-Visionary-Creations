@@ -922,54 +922,89 @@
             </div>
         </div>
     </section>
-    <footer class="w-scree  bg-[url('../imgs/about.jpg')] bg-center mt-5 ">
-        <div class="w-full h-full bg-[#212529F0] flex justify-around items-center  flex-col md:flex-row ">
-            <div class=" w-1/4  md:mb-14 ml-24">
-                <h1 class="text-white ">ABOUT US</h1>
-                <div class=" w-full border-t-2 mt-5 md:w-full ">
-                    <div class="flex mt-5"><img src="imgs/logo.png" width="50px" height="50px" alt="">
-                        <h2 class="text-[#EAF0FC] ml-5 mt-4 ">Visionary Creation</h2>
+    <footer class="w-full bg-[url('../imgs/about.jpg')] bg-cover bg-center mt-5">
+        <div class="w-full bg-[#212529F0] px-6 py-12 md:px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-white text-xl font-semibold">ABOUT US</h2>
+                        <div class="w-full h-0.5 bg-white mt-3"></div>
                     </div>
-                    <p class="text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Rem,
-                        repellendus nihil neque nam dignissimos <br> tempore architecto dolorem, <br>reprehenderit
-                        quidem quod similique? Commodi ut, quisquam natus <br> sint corporis sequi velit ratione.</p>
-                    <div class="flex gap-x-5">
-                        <p class="text-white">Copyright 2024 &copy;</p>
-                        <p class="text-red-500"> Lorenz Cipher</p>
+
+                    <div class="flex items-center gap-3">
+                        <img src="imgs/logo.png" alt="Visionary Creations Logo" class="w-12 h-12" />
+                        <h3 class="text-[#EAF0FC] text-lg">Visionary Creations</h3>
+                    </div>
+
+                    <p class="text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti
+                        minus optio accusamus, quam maiores explicabo sunt.
+                    </p>
+
+                    <div class="flex gap-2 text-sm">
+                        <span class="text-white">Copyright 2024 Â©</span>
+                        <span class="text-red-500">Lorenz Cipher</span>
                     </div>
                 </div>
-            </div>
-            <div class=" w-1/6  md:mb-80 mt-16">
-                <h1 class="text-white mt-10">USEFUL LINKS</h1>
-                <div class="flex gap-x-14 w-full border-t-2 mt-5 w-64 md:w-full ">
-                    <ul class="text-gray-300 mt-5">
-                        <li><a href=""> About</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Testimonial</a></li>
-                    </ul>
-                    <ul class="text-gray-300 mt-5">
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Faq</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
+
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-white text-xl font-semibold">USEFUL LINKS</h2>
+                        <div class="w-full h-0.5 bg-white mt-3"></div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <ul class="space-y-3 text-gray-300">
+                            <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Service</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Portfolio</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Testimonial</a></li>
+                        </ul>
+
+                        <ul class="space-y-3 text-gray-300">
+                            <li><a href="#" class="hover:text-white transition-colors">Team</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Faq</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class=" w-1/4  md:mb-48">
-                <h1 class="text-white mt-14">CONTACT INFO</h1>
-                <div class="border-t-2 mt-5 w-64 md:w-full">
-                    <p class="text-gray-300 mt-5">Contact us and we'll get back to you within 24 hours</p>
-                    <p class="text-gray-300"><i class="bi bi-geo-alt"></i>12345 Fake ST NoWhere AB Country </p>
-                    <p class="text-gray-300"><i class="bi bi-envelope"></i> info@website.com</p>
-                    <ul class="flex gap-x-6 mt-10">
-                        <li><i class="bi bi-facebook text-[#FFFFFF]"></i></li>
-                        <li><i class="bi bi-twitter text-[#FFFFFF]"></i></li>
-                        <li><i class="bi bi-google text-[#FFFFFF]"></i></li>
-                        <li><i class="bi bi-pinterest text-[#FFFFFF]"></i></li>
-                        <li><i class="bi bi-instagram text-[#FFFFFF]"></i></li>
-                        <li><i class="bi bi-rss text-[#FFFFFF]"></i></li>
-                    </ul>
+
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-white text-xl font-semibold">CONTACT INFO</h2>
+                        <div class="w-full h-0.5 bg-white mt-3"></div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Contact us and we'll get back to you within 24 hours.</p>
+
+                        <div class="space-y-2">
+                            <p class="text-gray-300 flex items-center gap-2">
+                                <i class="bi bi-geo-alt"></i>
+                                12345 Fake ST NoWhere AB Country
+                            </p>
+                            <p class="text-gray-300 flex items-center gap-2">
+                                <i class="bi bi-envelope"></i>
+                                info@website.com
+                            </p>
+                        </div>
+
+                        <ul class="flex gap-6 text-white">
+                            <li><a href="#" class="hover:text-gray-300 transition-colors"><i
+                                        class="bi bi-facebook"></i></a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition-colors"><i
+                                        class="bi bi-twitter"></i></a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition-colors"><i
+                                        class="bi bi-google"></i></a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition-colors"><i
+                                        class="bi bi-pinterest"></i></a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition-colors"><i
+                                        class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition-colors"><i class="bi bi-rss"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
